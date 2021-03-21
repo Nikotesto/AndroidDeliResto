@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import fr.isen.Nicolas_LEBON.databinding.FragmentDetailViewBinding
-import fr.isen.Nicolas_LEBON.databinding.FragmentPhotoBinding
+import fr.isen.Nicolas_LEBON.databinding.PhotoBinding
 import fr.isen.Nicolas_LEBON.network.Dish
 
 

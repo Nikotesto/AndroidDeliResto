@@ -6,18 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import fr.isen.Nicolas_LEBON.R
-import fr.isen.Nicolas_LEBON.databinding.FragmentPhotoBinding
+import fr.isen.Nicolas_LEBON.databinding.PhotoBinding
 import com.squareup.picasso.Picasso
 
 class PhotoFragment : Fragment() {
 
-    private lateinit var binding: FragmentPhotoBinding
+    private lateinit var binding: PhotoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentPhotoBinding.inflate(inflater, container, false)
+        binding = PhotoBinding.inflate(inflater, container, false)
         return binding.root
     }
 

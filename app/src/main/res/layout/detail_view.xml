@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="fr.isen.Nicolas_LEBON.detail.DetailViewFragment">
+    tools:context="fr.isen.Nicolas_LEBON.detail.DetailView">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
