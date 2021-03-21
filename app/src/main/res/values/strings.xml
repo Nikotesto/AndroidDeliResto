@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">La Bonne Franquette</string>
+    <string name="hello">Welcome at</string>
+
+    <string name="starter">Starters</string>
+    <string name="main">Mains</string>
+    <string name="dessert">Deserts</string>
+
+    <string name="toast_content">Toast Content</string>
+
+    <string name="total">Total</string>
+    <string name="basket_validation">Your meal has been put in the basket</string>
+    <string name="basket">Basket</string>
+    <string name="order">Pass a command</string>
+    <string name="quantity">Quantity :</string>
+
+    <string name="registrationTitle">Account creation</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Create an account</string>
+
+    <string name="login">Sign in</string>
+    <string name="scanBleTxt">BLE</string>
+
+</resources>
