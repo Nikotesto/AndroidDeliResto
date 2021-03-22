@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.isen.Nicolas_LEBON">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,10 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicolas_LEBON"
         android:usesCleartextTraffic="true">
-        <activity android:name="fr.isen.Nicolas_LEBON.registration.UserActivity"></activity>
+
+        <activity android:name="fr.isen.Nicolas_LEBON.ble.BleScanActivity" />
         <activity android:name="fr.isen.Nicolas_LEBON.detail.DetailActivity" />
         <activity android:name="fr.isen.Nicolas_LEBON.category.CategoryActivity" />
-        <activity android:name="fr.isen.Nicolas_LEBON.HomeActivity">
+        <activity android:name="fr.isen.Nicolas_LEBON.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -10,7 +10,7 @@ class PhotoAdapter(activity: AppCompatActivity, private val items: List<String>)
     }
 
     override fun createFragment(position: Int): Fragment {
-        return PhotoFragment.newInstance(
+        return Photo.newInstance(
             items[position]
         )
     }

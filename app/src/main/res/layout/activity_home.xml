@@ -96,12 +96,14 @@
 
     <Button
         android:id="@+id/scanBle"
-        android:layout_width="128dp"
-        android:layout_height="69dp"
-        android:text="@string/scanBleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/actionBle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dessert" />
+        app:layout_constraintTop_toBottomOf="@+id/footer"
+        tools:ignore="UnknownId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

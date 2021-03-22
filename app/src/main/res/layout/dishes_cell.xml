@@ -16,7 +16,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/dishImageView"
+            android:id="@+id/dishImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
@@ -37,8 +37,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.228"
-            app:layout_constraintStart_toEndOf="@+id/dishImageView"
-            app:layout_constraintTop_toTopOf="@+id/dishImageView" />
+            app:layout_constraintStart_toEndOf="@+id/dishImage"
+            app:layout_constraintTop_toTopOf="@+id/dishImage" />
 
         <TextView
             android:id="@+id/dishPrice"
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
             android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/dishImageView"
-            app:layout_constraintStart_toEndOf="@+id/dishImageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/dishImage"
+            app:layout_constraintStart_toEndOf="@+id/dishImage" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

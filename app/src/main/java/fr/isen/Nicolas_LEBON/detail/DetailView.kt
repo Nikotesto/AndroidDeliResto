@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import fr.isen.Nicolas_LEBON.databinding.FragmentDetailViewBinding
+import fr.isen.Nicolas_LEBON.databinding.DetailViewBinding
 import fr.isen.Nicolas_LEBON.databinding.PhotoBinding
 import fr.isen.Nicolas_LEBON.network.Dish
 
 
-class DetailViewFragment(private val dish: Dish?) : Fragment() {
+class DetailView(private val dish: Dish?) : Fragment() {
 
-    lateinit var binding: FragmentDetailViewBinding
+    lateinit var binding: DetailViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +24,7 @@ class DetailViewFragment(private val dish: Dish?) : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentDetailViewBinding.inflate(inflater, container, false)
+        binding = DetailViewBinding.inflate(inflater, container, false)
         return binding.root
     }
 

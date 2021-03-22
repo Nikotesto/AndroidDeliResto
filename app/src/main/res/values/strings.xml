@@ -14,14 +14,8 @@
     <string name="order">Pass a command</string>
     <string name="quantity">Quantity :</string>
 
-    <string name="registrationTitle">Account creation</string>
-    <string name="firstname">First Name</string>
-    <string name="lastname">Last Name</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="register">Create an account</string>
-
-    <string name="login">Sign in</string>
+    <string name="ble_scan_pause_title">Lancer le scan Ble</string>
     <string name="scanBleTxt">BLE</string>
+    <string name="actionBle">BLE</string>
 
 </resources>

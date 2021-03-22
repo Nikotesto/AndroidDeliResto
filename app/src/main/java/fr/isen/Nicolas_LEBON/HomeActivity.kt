@@ -2,6 +2,7 @@ package fr.isen.Nicolas_LEBON
 
 import android.content.Intent
 import android.os.Bundle
+import fr.isen.Nicolas_LEBON.ble.BleScanActivity
 import fr.isen.Nicolas_LEBON.category.CategoryActivity
 import fr.isen.Nicolas_LEBON.category.ItemType
 import fr.isen.Nicolas_LEBON.databinding.ActivityHomeBinding
@@ -25,6 +26,12 @@ class HomeActivity : BaseActivity() {
         binding.dessert.setOnClickListener {
             startCategoryActivity(ItemType.DESSERT)
         }
+        binding.scanBle.setOnClickListener {
+            val intent = Intent(this@HomeActivity, BleScanActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 

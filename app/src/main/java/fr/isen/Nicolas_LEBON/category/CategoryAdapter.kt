@@ -34,7 +34,7 @@ class CategoryAdapter(private val entries: List<Dish>,
     class DishesViewHolder(dishesBinding: DishesCellBinding): RecyclerView.ViewHolder(dishesBinding.root) {
         val titleView: TextView = dishesBinding.dishesTitle
         val priceView: TextView = dishesBinding.dishPrice
-        val imageView: ImageView = dishesBinding.dishImageView
+        val imageView: ImageView = dishesBinding.dishImage
         val layout = dishesBinding.root
 
         fun bind(dish: Dish) {

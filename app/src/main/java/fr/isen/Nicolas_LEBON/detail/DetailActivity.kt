@@ -24,7 +24,7 @@ class DetailActivity : BaseActivity() {
         dish?.let {
             setupView(it)
         }
-        val fragment = DetailViewFragment(dish)
+        val fragment = DetailView(dish)
         supportFragmentManager.beginTransaction().add(R.id.fragmentContainer, fragment).commit()
     }
 

@@ -9,7 +9,7 @@ import fr.isen.Nicolas_LEBON.R
 import fr.isen.Nicolas_LEBON.databinding.PhotoBinding
 import com.squareup.picasso.Picasso
 
-class PhotoFragment : Fragment() {
+class Photo : Fragment() {
 
     private lateinit var binding: PhotoBinding
 
@@ -32,7 +32,7 @@ class PhotoFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(url: String) = PhotoFragment()
+        fun newInstance(url: String) = Photo()
             .apply { arguments = Bundle().apply {  putString(URL, url) } }
 
         const val URL = "URL"

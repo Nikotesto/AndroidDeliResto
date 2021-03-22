@@ -13,7 +13,6 @@ import fr.isen.Nicolas_LEBON.databinding.ActivityCategoryBinding
 import fr.isen.Nicolas_LEBON.detail.DetailActivity
 import fr.isen.Nicolas_LEBON.network.Dish
 import fr.isen.Nicolas_LEBON.network.MenuResult
-import fr.isen.Nicolas_LEBON.network.NetworkConstant
 import com.google.gson.GsonBuilder
 import fr.isen.Nicolas_LEBON.BaseActivity
 import fr.isen.Nicolas_LEBON.HomeActivity
@@ -59,16 +58,20 @@ class CategoryActivity : BaseActivity() {
     }
 
     private fun makeRequest(selectedItem: ItemType?) {
+
+        val BASE_URL = "http://test.api.catering.bluecodegames.com/"
+        val PATH_MENU = "menu"
+        val ID_SHOP = "id_shop"
         resultFromCache()?.let {
             // La requete est en cache
             parseResult(it, selectedItem)
         } ?: run {
             // La requete n'est pas en cache
             val queue = Volley.newRequestQueue(this)
-            val url = NetworkConstant.BASE_URL + NetworkConstant.PATH_MENU
+            val url = BASE_URL + PATH_MENU
 
             val jsonData = JSONObject()
-            jsonData.put(NetworkConstant.ID_SHOP, "1")
+            jsonData.put(ID_SHOP, "1")
 
             var request = JsonObjectRequest(
                     Request.Method.POST,
